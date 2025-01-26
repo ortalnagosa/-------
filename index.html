@@ -25,6 +25,9 @@
         box-sizing: border-box;
        
       }
+      .imgcard{
+        max-height: 300px;
+      }
       img {
         max-width: 100%;
         height: auto;
@@ -154,22 +157,21 @@
         background: linear-gradient(green, yellow, red);
       }
 
-      @media (min-width: 768px) {
+      @media (max-width: 768px) {
       
         .image-container {
-            height: 430px;
+            height: 400px;
 
         }
         .image-container img {
-            width: 500px;
-            height: 400px;
-            margin: 60px;
-            
+            width: 900px;
+            height: 500px;
+            margin: 80px;
         }
 
         .form-overlay {
-          width: 60%;
-          height: auto;
+          width: 350px;
+          height: 350px;
                   
         }
           .form-group {
@@ -189,11 +191,13 @@
       }
 
 
-      @media (min-width: 100px) {
+      @media (max-width: 484px) {
+        .imgcard{
+            height: 1000px;
+            width: 500px;
+        }
         .image-container {
             height: 400px;
-            
-
         }
         .image-container img {
             width: 500px;
@@ -208,10 +212,13 @@
                   
         }     
         .card {
-          width: 160px  !important;
-          height: 440px;
-          margin-bottom: 20px;
+          width: 210px  !important;
+          height: 420px;
+          margin-bottom: 5px;
+          
+          
         }
+        
       }
 
     </style>
@@ -300,7 +307,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-19 230448.png"
           alt="some alt"
         />
@@ -325,7 +332,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 200951.png"
           alt="some alt"
         />
@@ -336,7 +343,7 @@
             reprehenquis repellendus
           </p>
           <div class="card-footer container p-2 shadow-lg text-center border">
-            <a href="./HTML פרוייקטים/פרויקט 1/test.html" class="btn mybtn"
+            <a href="/HTML פרוייקטים/פרויקט 1/test.html" class="btn mybtn"
               >go somewhere</a
             >
           </div>
@@ -348,7 +355,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 195332.png"
           alt="some alt"
         />
@@ -371,7 +378,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-09 002642.png"
           alt="some alt"
         />
@@ -394,7 +401,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 201407.png"
           alt="some alt"
         />
@@ -404,8 +411,8 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             reprehenquis repellendus
           </p>
-          <div class="card-footer container p-2 shadow-lg text-center border">
-            <a href="./HTML פרוייקטים/פרוייקט 4/test.html" class="btn mybtn"
+          <div class="card-footer container p-2 shadow-lg text-center border mt-4">
+            <a href="./HTML פרוייקטים/פרוייקט 4/test.html" class="btn mybtn "
               >go somewhere</a
             >
           </div>
@@ -417,7 +424,7 @@
         style="width: 15rem"
       >
         <img
-          class="border rounded-4"
+          class="imgcard border rounded-4"
           src="./HTML פרוייקטים/image/צילום מסך 2024-10-30 214347.png"
           alt="some alt"
         />
