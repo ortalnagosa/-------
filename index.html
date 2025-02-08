@@ -23,14 +23,10 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-       
       }
-      .imgcard{
-        max-height: 300px;
-      }
-      img {
-        max-width: 100%;
-        height: auto;
+
+      #myproject{
+        background-color: rgba(0, 0, 0, 0.365);
       }
 
       .navbar-toggler {
@@ -47,7 +43,7 @@
       }
 
       .navbar1 img {
-        height: 70px;
+        height: 30px;
         border-radius: 50%;
         margin-left: 120px;
         display: none;
@@ -69,169 +65,341 @@
         width: 100%;
         height: 500px;
         text-align: center;
+        color: white;
       }
 
       .aboutme img {
-        margin-top: 50px;
-        margin-bottom: 10px;
-        padding: 3px;
-        height: 150px;
-        border: 1px solid rgb(181, 170, 151);
-        border-radius: 15%;
-        box-shadow: 30px 20px 60px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px;
+        height: 250px;
+        width: 200px;
+        border: 1px solid rgb(243, 231, 7);
+        border-radius: calc(100%);
+        box-shadow: 20px 10px 80px rgb(49, 30, 4);
       }
 
       .aboutme p {
-        font-size: 20px;
+        font-size: 19px;
         font-family: Arial, Helvetica, sans-serif;
       }
 
       .resume {
         background-color: rgba(198, 178, 153, 0.6);
         border: 2px solid rgb(196, 163, 163);
+        font-size: 14px;
       }
 
       .resume:hover {
         background-color: rgba(181, 118, 35, 0.3);
-        border: 2px solid rgb(55, 65, 3);
+        border: 3px solid rgb(55, 65, 3);
         opacity: 0.5;
       }
 
       .myjobs {
         color: white;
-        background-color: rgba(163, 104, 26, 0.444);
         margin-top: -23px;
       }
 
       .mycards {
-        background-color: rgba(177, 110, 22, 0.164);
+        max-width:100%;
+        margin: -4px;
+      }
+
+      .imgcard {
+        height: 150px;
+        width:100%;
       }
 
       .myjobs > img {
-        height: 50px;
+        height: 56px;
         margin: 15px;
         border-radius: 90%;
-        border: 6px solid  rgb(208, 158, 122) ;
+        border: 6px solid rgb(208, 158, 122);
         box-shadow: 15px 15px 50px black;
+      }
+      .myjobs > img:hover {
+        cursor: pointer;
+        box-shadow: 10px 10px 30px white;
       }
 
       .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-      
+        justify-content: space-between;
       }
 
-      .card {
-        margin-bottom: 20px;
-        width: 320px  !important;
-        height: 420px;
+      .card-html {
+        margin: 45px;
+        width: 300px !important;
+        height: 390px;
+        position: relative;
+        text-align: center;
+        border: none !important;
+      }
+
+      .card-html:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 60px 160px 300px white;
+      }
+      .card-games {
+        margin: 45px;
+        width: 300px !important;
+        height: 280px;
+        position: relative;
+        text-align: center;
+        border: none !important;
+
+      }
+      .card-games:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 60px 160px 80px white;
+      }
+
+  
+
+      .card-footer {
+        width: 200px;
+        margin-left: 10%;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+      }
+      .mybtn {
+        background: linear-gradient(green, yellow, red);
+        width: 100px;
+        cursor: pointer;
+      }
+
+      .mybtn:hover {
+        transform: scale(1.2, 1.2);
+      }
+
+      .mybtnGame{
+        background: linear-gradient(to right, green, yellow, red);
+        width: 100px;
+        
+        cursor: pointer;
+      }
+      .mybtnGame:hover {
+        transform: scale(1.2, 1.2);
       }
 
       .image-container {
         position: relative;
-        margin: auto;
-        background-color: rgb(208, 158, 122);
         max-width: 100%;
-        overflow: hidden;
         text-align: center;
       }
 
       .image-container img {
-        width: 45%;
-        height: 45%;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        display: block;
       }
+  
 
       .form-overlay {
         position: absolute;
         top: 50%;
         left: 50%;
-        background-color: rgba(255, 255, 255, 0.171);
-        border-radius: 40px;
-        padding: 30px;
-        width: 50%;
         transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 2px 4px 50px rgba(10, 10, 9, 0.2);
+        cursor: pointer;
+
       }
 
-      .mybtn {
-        background: linear-gradient(green, yellow, red);
+      .form-group {
+        margin-bottom: 15px;
+        text-align: right;
+
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .button1 {
+        width: 50%;
+        background: rgba(5, 189, 103, 0.43);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .button1:hover {
+        background: rgba(5, 189, 103, 0.548);
       }
 
       @media (max-width: 768px) {
+        .aboutme img {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          padding: 3px;
+          height: 220px;
+          width: 200px;
+          border: 1px solid rgb(243, 231, 7);
+          border-radius: calc(100%);
+          box-shadow: 20px 10px 80px rgb(49, 30, 4);
+        }
+
+        .aboutme p {
+          font-size: 16px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .resume {
+          background-color: rgba(198, 178, 153, 0.6);
+          border: 2px solid rgb(196, 163, 163);
+          font-size: 10px;
+        }
+
       
-        .image-container {
-            height: 400px;
 
-        }
-        .image-container img {
-            width: 900px;
-            height: 500px;
-            margin: 80px;
-        }
+        .card-html {
+          height: 320px;
+          width: 255px !important;
+          position: relative;
+          text-align: center;
+          h4 {
+            font-size: 20px;
+          }
+          img {
+            height: 125px;
+          }
 
-        .form-overlay {
-          width: 350px;
-          height: 350px;
-                  
+          p {
+            font-size: 12px;
+          }
         }
-          .form-group {
-        width: 100%;
-    }
-    .form-group input, .form-group textarea {
-        width: 100%;
-    }
-        .image-container {
-          padding: 10px;
-        }
-        .card {
-          width: 210px  !important;
-          height: 368px;
-          margin-bottom: 20px;
-        }
-      }
-
-
-      @media (max-width: 484px) {
-        .imgcard{
-            height: 1000px;
-            width: 500px;
-        }
-        .image-container {
-            height: 400px;
-        }
-        .image-container img {
-            width: 500px;
-            height: 400px;
-            margin: 60px;
-            
-        }
-
-        .form-overlay {
-          width: 80%;
-          height: auto;
-                  
-        }     
-        .card {
-          width: 210px  !important;
-          height: 420px;
-          margin-bottom: 5px;
+        .card-games {
+          height: 250px;
+          width: 250px !important;
+          position: relative;
+          text-align: center;
           
-          
+          h4 {
+            font-size: 17px;
+          }
+          img {
+            height: 130px;
+          }
+
         }
         
+        .card-footer {
+        width: 100px;
+        background-color: lightgray;
+        margin-left: 50px;
+        cursor: pointer;
+            
+      }
+      
+
+
+     
+
+     
+  
+
+      .form-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 600px;
+        box-shadow: 2px 4px 50px rgba(10, 10, 9, 0.2);
+        cursor: pointer;
+
       }
 
+      .form-group {
+        margin-bottom: 15px;
+        text-align: right;
+
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+
+
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      .button1 {
+        width: 50%;
+        background: rgba(5, 189, 103, 0.43);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .button1:hover {
+        background: rgba(5, 189, 103, 0.548);
+      }
+       
+      }
     </style>
   </head>
 
   <body>
+    <div id="myproject">
     <nav class="navbar navbar-expand-lg sticky-top navbar1">
       <div class="container-fluid">
         <div class="navbar-brand">
           <div class="row">
             <div class="col-md-3 col-sm-3">
               <img
-                src="./HTML פרוייקטים/image/תמונה של WhatsApp‏ 2024-09-28 בשעה 09.25.38_077c4c48.jpg"
+                src="../HTML/image/תמונה של WhatsApp‏ 2024-09-28 בשעה 09.25.38_077c4c48.jpg"
                 alt="תמונה שלי"
               />
             </div>
@@ -278,10 +446,7 @@
     </nav>
 
     <div class="aboutme" id="aboutme">
-      <img
-        src="./HTML פרוייקטים/image/תמונה של WhatsApp‏ 2024-09-28 בשעה 09.25.38_077c4c48.jpg"
-        alt="תמונה שלי"
-      />
+      <img src="./HTML/image/me mysel and i.jpg" alt="תמונה שלי" />
 
       <h2>קצת עליי</h2>
       <p>
@@ -292,159 +457,328 @@
       <a href="#" download="#" class="btn resume">קורות חיים להורדה</a>
     </div>
 
-    <div class="container d-flex justify-content-center p-4 gap-3 flex-wrap mycards" id="job">
+    <div
+      class="container d-flex justify-content-center p-4 gap-3 flex-wrap mycards"
+      id="job"
+    >
       <div class="w-100 text-center myjobs">
         <h1>תיק העבודות שלי</h1>
 
-        <img src="./HTML פרוייקטים/image/img-HTML.png" alt="html" />
-        <img src="./HTML פרוייקטים/image/img-CSS.png" alt="css" />
-        <img src="./HTML פרוייקטים/image/img-SASS.png" alt="sass" />
-        <img src="./HTML פרוייקטים/image/img-Bootstrap.png" alt="bootstrap" />
+        <img src="./HTML/image/img-HTML.png" alt="html" />
+        <img src="./HTML/image/img-CSS.png" alt="css" />
+        <img src="./HTML/image/img-SASS.png" alt="sass" />
+        <img src="./HTML/image/img-Bootstrap.png" alt="bootstrap" />
+        <img src="./HTML/image/img-JS.png" alt="JavaScript" />
+        <img src="./HTML/image/img-OOP.png" alt="OOP" />
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-19 230448.png"
+          src="./HTML/image/צילום מסך 2025-01-28 212336.png"
           alt="some alt"
         />
         <div class="card-body">
           <h4 class="card-title text-center">Coffe</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+          <p class="card-text" style="direction: rtl">
+            זמן לקפה יש לך? <br />
+            חשוב לדעת למצוא את הרגע ביום לעצמך לטעינת מצברים עם קפה טוב !
           </p>
-          <div
-            class="card-footer container p-2 shadow-lg text-center border mb-3"
-          >
-            <a href="./HTML פרוייקטים/פרוייקט 5/test.html" class="btn mybtn"
-              >go somewhere</a
-            >
+          <div class="card-footer p-2 shadow-lg text-center border">
+            <a href="/HTML/פרוייקט 5/test.html" class="btn mybtn">go </a>
           </div>
         </div>
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 200951.png"
+          src="./HTML/image/צילום מסך 2024-10-22 200951.png"
           alt="some alt"
         />
         <div class="card-body">
           <h4 class="card-title text-center">Gift</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+          <p class="card-text" style="direction: rtl">
+            כבר לקחת את המתנה שלך? <br />
+            בואו לברר מה מגיע לכם יש שלל מתנות שלא שווה לפספס!!
           </p>
-          <div class="card-footer container p-2 shadow-lg text-center border">
-            <a href="/HTML פרוייקטים/פרויקט 1/test.html" class="btn mybtn"
-              >go somewhere</a
-            >
+          <div class="card-footer p-2 shadow-lg text-center border">
+            <a href="./HTML/פרויקט 1/test.html" class="btn mybtn">go </a>
           </div>
         </div>
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 195332.png"
+          src="./HTML/image/צילום מסך 2024-10-22 195332.png"
           alt="some alt"
         />
         <div class="card-body">
           <h4 class="card-title text-center">Promotion</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+          <p class="card-text" style="direction: rtl">
+            על להוביל אותך שמעת?? <br />
+            תוכנית לצעירים אחרי צבא שמחפשים הובלה לאזרחות
           </p>
           <div class="card-footer container p-2 shadow-lg text-center border">
-            <a href="./HTML פרוייקטים/פרוייקט 2/test.html" class="btn mybtn"
-              >go somewhere</a
-            >
+            <a href="./HTML/פרוייקט 2/test.html" class="btn mybtn">go </a>
           </div>
         </div>
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-09 002642.png"
+          src="./HTML/image/צילום מסך 2024-10-09 002642.png"
           alt="some alt"
         />
         <div class="card-body">
-          <h4 class="card-title text-center">WORD</h4>
+          <h4 class="card-title text-center" style="direction: rtl">WORD</h4>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+            גילו מטורף של עולם הטבע <br />
+            בואו להתרשם יחד <br />
+            גלה את העולם והעולם יגלה אותך
           </p>
           <div class="card-footer container p-2 shadow-lg text-center border">
             <a href="./HTML פרוייקטים/פרוייקט 3/test.html" class="btn mybtn"
-              >go somewhere</a
-            >
+              >go
+            </a>
           </div>
         </div>
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-22 201407.png"
+          src="./HTML/image/צילום מסך 2024-10-22 201407.png"
           alt="some alt"
         />
         <div class="card-body">
           <h4 class="card-title text-center">TO LEAD YOU</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+          <p class="card-text" style="direction: rtl">
+            בואו להוביל איתנו יחד ונוביל אותכם קדימה<br />
+            תוכנית חדשה יצאה לדרך <br />
+            
           </p>
-          <div class="card-footer container p-2 shadow-lg text-center border mt-4">
-            <a href="./HTML פרוייקטים/פרוייקט 4/test.html" class="btn mybtn "
-              >go somewhere</a
-            >
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./HTML פרוייקטים/פרוייקט 4/test.html" class="btn mybtn"
+              >go
+            </a>
           </div>
         </div>
       </div>
 
       <div
-        class="card border border-3 border-dark rounded-4 bg-dark-subtle"
+        class="card card-html border border-3 border-dark rounded-4 bg-dark-subtle"
         style="width: 15rem"
       >
         <img
           class="imgcard border rounded-4"
-          src="./HTML פרוייקטים/image/צילום מסך 2024-10-30 214347.png"
+          src="./HTML/image/צילום מסך 2024-10-30 214347.png"
           alt="some alt"
         />
         <div class="card-body">
           <h4 class="card-title text-center">SUN</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            reprehenquis repellendus
+          <p class="card-text" style="direction: rtl">
+            השילוב הכי יפה שתפגשו <br />
+            כלב שהוא גם ממש חבר <br />
+            יפה ברמות על
           </p>
           <div class="card-footer container p-2 shadow-lg text-center border">
-            <a href="./HTML פרוייקטים/פרוייקט 6/test.html" class="btn mybtn"
-              >go somewhere</a
-            >
+            <a href="/HTML/פרוייקט 6/test.html" class="btn mybtn">go </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="image-container" id="contact">
-      <img src="./HTML פרוייקטים/image/Rectangle 41.png" alt="" />
+    <div
+      class="container d-flex justify-content-center p-4 mt-1 gap-3 flex-wrap mycards"
+      id="job"
+    >
+      <div class="w-100 text-center myjobs">
+        <h1 style="direction: rtl">אפליקציות JS</h1>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-01-28 190705.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">Studying Arithmetic</h4>
+          <div
+            class="card-footer container p-2 shadow-lg text-center border mybtnGames1"
+          >
+            <a
+              href="./JavaScript/StudyingArihmetic/index.html"
+              class="btn mybtnGame"
+              >go</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-01-28 200552.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">Finding Countries</h4>
+
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/Countries/index.html" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-01-28 203119.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">User List</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/UseList/index.html" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-02-08 152842.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">World Clocks</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/WorldClocks/clock.html" class="btn mybtnGame"
+              >go</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-02-08 125025.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">weather</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/weather-project/index.html" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./JavaScript/imag/צילום מסך 2025-02-08 140106.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">screen builder</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/juniorScreenBuilder/index.html" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./HTML/image/000.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">???????????????</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./HTML/image/000.png" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./HTML/image/000.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">memory game</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./JavaScript/memoryGame/index.html" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card card-games border border-3 border-dark rounded-4 bg-dark-subtle"
+        style="width: 15rem"
+      >
+        <img
+          class="imgcard border rounded-4"
+          src="./HTML/image/000.png"
+          alt="some alt"
+        />
+        <div class="card-body">
+          <h4 class="card-title text-center">???????????????</h4>
+          <div class="card-footer container p-2 shadow-lg text-center border">
+            <a href="./HTML/image/000.png" class="btn mybtnGame">go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container" id="contact" style="direction: rtl">
+      <img src="./HTML/image/Rectangle 41.png" alt="" />
       <div class="form-overlay">
         <form action="">
           <div class="from-group">
@@ -489,11 +823,11 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-light mt-2">שלח</button>
+          <button type="submit" class="btn btn-light mt-2 button1">שלח</button>
         </form>
       </div>
     </div>
-
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
